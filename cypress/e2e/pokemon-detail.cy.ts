@@ -1,5 +1,5 @@
-describe("Test the Detail Page of Pokemon", ()=>{
-    it("should show the details of a pokemon when clicks on it", ()=>{
+describe("Test the Detail Page of Pokemon", () => {
+    it("should show the details of a pokemon when clicks on it", () => {
         cy.visit('/pokemon-detail/1');
 
         cy.intercept('GET', 'http://localhost:3000/pokemon/1', {
@@ -15,9 +15,8 @@ describe("Test the Detail Page of Pokemon", ()=>{
 
             const className = $div[0].className;
             expect(className).to.match(/container/);
-        }).then(($div)=>{
+        }).then(($div) => {
             expect($div).to.have.css("display", "flex")
         })
     })
-
 }) 

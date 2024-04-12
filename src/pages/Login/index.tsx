@@ -18,6 +18,7 @@ export default function Login() {
                 <input type="text" placeholder="Digite seu e-mail" />
                 <input type="text" placeholder="Digite sua senha" />
                 <button>Login</button>
+                <button type="button">Limpar</button>
                 <Link to="/sign-up">Não tem cadastro? Clique aqui!</Link>
             </form>
         </div>
